@@ -1,0 +1,114 @@
+[
+  {
+    "id": "TSLA-283239",
+    "title": "Project Engineer, Refining Technical Programs",
+    "company": "Tesla",
+    "location": "Austin, TX",
+    "text": "Support early-stage engineering, manage external vendors, conduct cost tradeoffs, and track project schedules for capital projects that unlock production of critical minerals, materials, and chemicals. Define and track action items, facilitate meetings, promote transparency across workstreams. Track front-end engineering deliverables and facilitate cross-functional engineering reviews. Support procurement and tracking of capital equipment. Develop and enforce an engineering schedule with pilot development, commercial technology, and infrastructure teams. Conduct activities with external engineering partners and equipment providers. Take projects from concept through completion with formal handoff to downstream owners. Develop process flow diagrams, simulation models, mass and energy balances to progress projects from basic engineering into procurement and detailed design. Requires a degree in Chemical, Mechanical, or Manufacturing Engineering, 1-5 years of experience in engineering or project management within process industries such as refining, oil and gas, chemicals, recycling, or cell manufacturing, working knowledge of stage-gate delivery and the EPC project lifecycle, strong communication and documentation skills."
+  },
+  {
+    "id": "REQ-1002",
+    "title": "Process Engineer, Battery Materials",
+    "company": "Northgate Minerals",
+    "location": "Reno, NV",
+    "text": "Design and optimize hydrometallurgical processes for lithium and nickel refining. Develop mass and energy balances, process flow diagrams, and P&IDs for pilot and commercial scale plants. Lead HAZOP studies and support process safety reviews. Collaborate with equipment vendors on reactor, crystallizer, and filtration package specifications. Support scale-up from bench to pilot to full production. Bachelor's degree in Chemical Engineering required, experience with process simulation software, strong analytical and troubleshooting skills."
+  },
+  {
+    "id": "REQ-1003",
+    "title": "Mechanical Design Engineer, Manufacturing",
+    "company": "Ironclad Manufacturing Co",
+    "location": "Detroit, MI",
+    "text": "Design mechanical systems and fixtures for high-volume manufacturing lines. Create detailed CAD models and drawings, tolerance stack-up analysis, and DFMEA. Coordinate with tooling vendors and manage prototype builds. Support root-cause investigations on the production floor. Mechanical Engineering degree, SolidWorks or Creo experience, GD&T knowledge, experience working cross-functionally with production and quality teams."
+  },
+  {
+    "id": "REQ-1004",
+    "title": "Data Scientist, Machine Learning",
+    "company": "Vector Analytics",
+    "location": "Remote",
+    "text": "Build and deploy machine learning models for demand forecasting and anomaly detection. Own the full model lifecycle from feature engineering through production deployment and monitoring. Work with data engineers to build scalable pipelines. Experience with Python, scikit-learn, pandas, SQL, and cloud ML platforms. Strong statistics background and experience communicating model results to non-technical stakeholders."
+  },
+  {
+    "id": "REQ-1005",
+    "title": "Backend Software Engineer, Python",
+    "company": "Lumen Fintech",
+    "location": "New York, NY",
+    "text": "Design, build, and maintain backend services and REST APIs using Python, FastAPI, and Flask. Own containerized deployments with Docker and Docker Compose, and configure production WSGI/ASGI servers such as Gunicorn. Write unit and integration tests, participate in code review, and monitor service health and performance in production. Experience with relational databases, caching layers, and CI/CD pipelines preferred."
+  },
+  {
+    "id": "REQ-1006",
+    "title": "MLOps / DevOps Engineer",
+    "company": "Cascade Cloud Systems",
+    "location": "Seattle, WA",
+    "text": "Operate the infrastructure that serves machine learning models in production, including containerization with Docker, orchestration, and CI/CD automation. Build monitoring, logging, and alerting for inference services. Benchmark and tune application servers such as Gunicorn and Uvicorn for throughput and latency. Collaborate with data scientists to productionize models behind FastAPI and Flask services. Experience with Kubernetes, Terraform, and observability tooling a plus."
+  },
+  {
+    "id": "REQ-1007",
+    "title": "Project Manager, Construction",
+    "company": "Summit Builders Group",
+    "location": "Houston, TX",
+    "text": "Manage capital construction projects from permitting through commissioning. Develop and maintain the master project schedule, track critical path and float, and report progress to stakeholders. Coordinate general contractors, subcontractors, and vendors. Manage change orders and cost tracking against budget. PMP certification preferred, strong scheduling software experience (Primavera P6 or MS Project), excellent written and verbal communication skills."
+  },
+  {
+    "id": "REQ-1008",
+    "title": "Chemical Engineer, Oil & Gas Refining",
+    "company": "Meridian Refining Partners",
+    "location": "Baton Rouge, LA",
+    "text": "Provide process engineering support for refinery units including distillation, hydrotreating, and sulfur recovery. Perform mass and energy balances, troubleshoot unit performance, and support capital project scoping. Participate in stage-gate reviews for capital projects and coordinate with EPC contractors during detailed design and construction. Chemical Engineering degree, refining or petrochemical experience preferred, working knowledge of process simulators."
+  },
+  {
+    "id": "REQ-1009",
+    "title": "Full Stack Developer",
+    "company": "Brightloop Software",
+    "location": "Austin, TX",
+    "text": "Build web applications end to end using React on the frontend and Flask or FastAPI on the backend. Deploy services with Docker and Docker Compose, and configure Gunicorn for production workloads behind an Nginx reverse proxy. Write automated tests and participate in an agile development process. Comfortable owning a feature from design through deployment and monitoring."
+  },
+  {
+    "id": "REQ-1010",
+    "title": "Supply Chain & Procurement Specialist",
+    "company": "Orbital Components Inc",
+    "location": "Phoenix, AZ",
+    "text": "Manage RFQ processes and vendor negotiations for capital equipment and components. Track purchase orders, lead times, and delivery schedules against project need-by dates. Build and maintain vendor scorecards covering cost, quality, and on-time delivery. Support cost tradeoff analysis for make-vs-buy and vendor selection decisions. Strong Excel and analytical skills, experience with ERP procurement modules."
+  },
+  {
+    "id": "REQ-1011",
+    "title": "Quality Engineer, Manufacturing",
+    "company": "Ironclad Manufacturing Co",
+    "location": "Detroit, MI",
+    "text": "Own the quality management system for a high-volume manufacturing line. Lead root-cause investigations, corrective action plans, and supplier quality audits. Develop inspection plans and statistical process control charts. Collaborate with manufacturing and design engineering on continuous improvement projects. Six Sigma Green Belt preferred, strong data analysis skills."
+  },
+  {
+    "id": "REQ-1012",
+    "title": "Site Reliability Engineer",
+    "company": "Cascade Cloud Systems",
+    "location": "Remote",
+    "text": "Ensure the reliability, scalability, and performance of production services running in Docker containers. Build automated deployment pipelines, define health checks and SLOs, and lead incident response. Tune application servers (Gunicorn, Uvicorn workers) and reverse proxies (Nginx) for high-throughput workloads. Strong Linux systems background, scripting in Python or Bash, and experience with container orchestration."
+  },
+  {
+    "id": "REQ-1013",
+    "title": "Business Analyst, Operations",
+    "company": "Meridian Refining Partners",
+    "location": "Baton Rouge, LA",
+    "text": "Analyze operational and financial data to support capital project business cases and cost estimates. Build dashboards and reports summarizing project schedule, budget, and risk status for leadership reviews. Partner with engineering and procurement teams to track action items and decisions. Strong Excel, SQL, and data visualization skills, excellent written communication."
+  },
+  {
+    "id": "REQ-1014",
+    "title": "Electrical Engineer, Power Systems",
+    "company": "Northgate Minerals",
+    "location": "Reno, NV",
+    "text": "Design electrical distribution and instrumentation systems for mineral processing plants. Develop single-line diagrams, instrument lists, and control system specifications. Support commissioning and start-up of electrical and instrumentation packages. Coordinate with process and mechanical engineering during detailed design. Electrical Engineering degree, experience with industrial control systems and hazardous area classification."
+  },
+  {
+    "id": "REQ-1015",
+    "title": "Product Manager, AI Products",
+    "company": "Vector Analytics",
+    "location": "San Francisco, CA",
+    "text": "Define the roadmap for AI-powered analytics products, working closely with data science and engineering teams. Translate customer needs into product requirements, prioritize the backlog, and track delivery against a stage-gate release process. Present product performance and business impact to leadership. Experience with machine learning products and strong cross-functional communication skills."
+  },
+  {
+    "id": "REQ-1016",
+    "title": "Environmental Engineer, Sustainability",
+    "company": "Meridian Refining Partners",
+    "location": "Baton Rouge, LA",
+    "text": "Support environmental permitting and compliance for refining and chemical processing facilities. Conduct emissions calculations and environmental impact assessments for new capital projects. Coordinate with regulatory agencies and internal engineering teams on permit conditions. Environmental or Chemical Engineering degree, familiarity with air and water quality regulations."
+  }
+]

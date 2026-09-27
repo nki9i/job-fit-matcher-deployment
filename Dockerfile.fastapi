@@ -1,0 +1,28 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy dependency manifests first so Docker can cache the pip install layer
+# independently of application code changes.
+COPY requirements-common.txt ./
+COPY app_fastapi/requirements.txt ./app_fastapi/requirements.txt
+RUN pip install --no-cache-dir -r app_fastapi/requirements.txt
+
+# Shared inference code + precomputed model artifacts (built offline by
+# model/build_index.py and checked into the repo — no model download or
+# training happens inside the image build or at container start).
+COPY common ./common
+COPY model/artifacts ./model/artifacts
+COPY app_fastapi ./app_fastapi
+
+ENV ARTIFACTS_DIR=/app/model/artifacts
+EXPOSE 8000
+
+HEALTHCHECK --interval=15s --timeout=3s --start-period=10s --retries=3 \
+  CMD python -c "import urllib.request as u; u.urlopen('http://localhost:8000/health', timeout=2)" || exit 1
+
+# Gunicorn manages worker processes; UvicornWorker gives each one an async
+# event loop so FastAPI's `async def` handlers actually get to overlap I/O.
+CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "-w", "2", \
+     "-b", "0.0.0.0:8000", "--timeout", "30", "--access-logfile", "-", \
+     "app_fastapi.main:app"]

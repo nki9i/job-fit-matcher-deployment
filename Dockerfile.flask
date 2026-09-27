@@ -1,0 +1,23 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements-common.txt ./
+COPY app_flask/requirements.txt ./app_flask/requirements.txt
+RUN pip install --no-cache-dir -r app_flask/requirements.txt
+
+COPY common ./common
+COPY model/artifacts ./model/artifacts
+COPY app_flask ./app_flask
+
+ENV ARTIFACTS_DIR=/app/model/artifacts
+EXPOSE 8000
+
+HEALTHCHECK --interval=15s --timeout=3s --start-period=10s --retries=3 \
+  CMD python -c "import urllib.request as u; u.urlopen('http://localhost:8000/health', timeout=2)" || exit 1
+
+# Gunicorn's default sync workers: one OS process per worker, each handling
+# one request at a time — simple, memory-heavy under concurrency, and the
+# baseline this project's load test compares FastAPI+Uvicorn workers against.
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "--timeout", "30", \
+     "--access-logfile", "-", "app_flask.app:app"]
